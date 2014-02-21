@@ -1,5 +1,5 @@
 //
-// AMGAppButton.h
+// AMGApp.h
 //
 // Copyright (c) 2014 Vincent Tourraine (http://www.vtourraine.net)
 //
@@ -21,12 +21,25 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <VTAppButton.h>
+@import Foundation;
 
-@class AMGApp;
+@interface AMGApp : NSObject
 
-@interface AMGAppButton : VTAppButton
+@property (nonatomic, readonly, copy) NSString *iconImageName;
+@property (nonatomic, readonly, copy) NSNumber *identifier;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly, copy) NSString *nameShort;
 
-+ (instancetype)buttonWithApp:(AMGApp *)app;
++ (instancetype)appWithIdentifier:(NSNumber *)identifier
+                             name:(NSString *)name
+                        nameShort:(NSString *)nameShort
+                    iconImageName:(NSString *)iconImageName;
+
++ (instancetype)app1List;
++ (instancetype)appContacts;
++ (instancetype)appGamesKeeper;
++ (instancetype)appWizBox;
++ (instancetype)appMemorii;
++ (instancetype)appComicBookDay;
 
 @end
