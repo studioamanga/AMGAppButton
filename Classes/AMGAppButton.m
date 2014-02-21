@@ -60,4 +60,11 @@
              @"appID": @"352411168"};
 }
 
++ (NSDictionary *)comicBookDayAppDetails
+{
+    return @{@"name":  @"Comic Book Day",
+             @"icon":  @"Assets/AMGIconComicBookDay60",
+             @"appID": @"788312005"};
+}
+
 @end

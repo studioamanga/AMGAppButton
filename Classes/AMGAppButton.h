@@ -30,5 +30,6 @@
 + (NSDictionary *)gamesKeeperAppDetails;
 + (NSDictionary *)wizBoxAppDetails;
 + (NSDictionary *)memoriiAppDetails;
++ (NSDictionary *)comicBookDayAppDetails;
 
 @end
