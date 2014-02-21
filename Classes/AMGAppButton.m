@@ -27,44 +27,50 @@
 
 + (NSDictionary *)oneListAppDetails
 {
-    return @{@"name":  @"1List",
-             @"icon":  @"Assets/AMGIcon1List60",
-             @"appID": @"579440241"};
+    return @{@"name":      @"1List",
+             @"nameShort": @"1List",
+             @"icon":      @"Assets/AMGIcon1List60",
+             @"appID":     @"579440241"};
 }
 
 + (NSDictionary *)contactsAppDetails
 {
-    return @{@"name":  @"Contact[s]",
-             @"icon":  @"Assets/AMGIconContacts60",
-             @"appID": @"639507613"};
+    return @{@"name":      @"Contact[s]",
+             @"nameShort": @"Contact[s]",
+             @"icon":      @"Assets/AMGIconContacts60",
+             @"appID":     @"639507613"};
 }
 
 + (NSDictionary *)gamesKeeperAppDetails
 {
-    return @{@"name":  @"Games Keeper",
-             @"icon":  @"Assets/AMGIconGamesKeeper60",
-             @"appID": @"674138310"};
+    return @{@"name":      @"Games Keeper",
+             @"nameShort": @"Games Keeper",
+             @"icon":      @"Assets/AMGIconGamesKeeper60",
+             @"appID":     @"674138310"};
 }
 
 + (NSDictionary *)wizBoxAppDetails
 {
-    return @{@"name":  @"WizBox",
-             @"icon":  @"Assets/AMGIconWizBox60",
-             @"appID": @"325184067"};
+    return @{@"name":      @"WizBox",
+             @"nameShort": @"WizBox",
+             @"icon":      @"Assets/AMGIconWizBox60",
+             @"appID":     @"325184067"};
 }
 
 + (NSDictionary *)memoriiAppDetails
 {
-    return @{@"name":  @"Memorii",
-             @"icon":  @"Assets/AMGIconMemorii60",
-             @"appID": @"352411168"};
+    return @{@"name":      @"Memorii",
+             @"nameShort": @"Memorii",
+             @"icon":      @"Assets/AMGIconMemorii60",
+             @"appID":     @"352411168"};
 }
 
 + (NSDictionary *)comicBookDayAppDetails
 {
-    return @{@"name":  @"Comic Book Day",
-             @"icon":  @"Assets/AMGIconComicBookDay60",
-             @"appID": @"788312005"};
+    return @{@"name":      @"Comic Book Day",
+             @"nameShort": @"Comic Book",
+             @"icon":      @"Assets/AMGIconComicBookDay60",
+             @"appID":     @"788312005"};
 }
 
 @end
