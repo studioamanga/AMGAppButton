@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AMGAppButton"
-  s.version      = "0.1.4"
+  s.version      = "0.1.5"
   s.summary      = "AMGAppButton generates icons-like buttons."
 
   s.description  = <<-DESC
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '5.0'
 
-  s.source       = { :git => "https://github.com/studioamanga/AMGAppButton.git", :tag => "0.1.4" }
+  s.source       = { :git => "https://github.com/studioamanga/AMGAppButton.git", :tag => "0.1.5" }
 
   s.source_files  = 'Classes', 'Classes/**/*.{h,m}'
 
