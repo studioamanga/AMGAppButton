@@ -1,7 +1,7 @@
 //
 // AMGApp.m
 //
-// Copyright (c) 2014 Vincent Tourraine (http://www.vtourraine.net)
+// Copyright (c) 2014-2019 Vincent Tourraine (http://www.vtourraine.net)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -35,71 +35,50 @@
 
 @implementation AMGApp
 
-+ (instancetype)appWithIdentifier:(NSNumber *)identifier
-                             name:(NSString *)name
-                        nameShort:(NSString *)nameShort
-                    iconImageName:(NSString *)iconImageName
-{
++ (instancetype)appWithIdentifier:(NSNumber *)identifier name:(NSString *)name nameShort:(NSString *)nameShort iconImageName:(NSString *)iconImageName {
     AMGApp *app = [self new];
 
-    app.identifier    = identifier;
-    app.name          = name;
-    app.nameShort     = nameShort;
+    app.identifier = identifier;
+    app.name = name;
+    app.nameShort = nameShort;
     app.iconImageName = iconImageName;
 
     return app;
 }
 
-+ (instancetype)app1List
-{
-    return [self appWithIdentifier:@579440241
-                              name:@"1List"
-                         nameShort:nil
-                     iconImageName:@"Assets/AMGIcon1List60"];
++ (instancetype)app1List {
+    return [self appWithIdentifier:@579440241 name:@"1List" nameShort:nil iconImageName:@"Assets/AMGIcon1List60"];
 }
 
-+ (instancetype)appContacts
-{
-    return [self appWithIdentifier:@639507613
-                              name:@"Contact[s]"
-                         nameShort:nil
-                     iconImageName:@"Assets/AMGIconContacts60"];
++ (instancetype)appContacts {
+    return [self appWithIdentifier:@639507613 name:@"Contact[s]" nameShort:nil iconImageName:@"Assets/AMGIconContacts60"];
 }
 
-+ (instancetype)appGamesKeeper
-{
-    return [self appWithIdentifier:@674138310
-                              name:@"Games Keeper"
-                         nameShort:@"Games"
-                     iconImageName:@"Assets/AMGIconGamesKeeper60"];
++ (instancetype)appGamesKeeper {
+    return [self appWithIdentifier:@674138310 name:@"Games Keeper" nameShort:@"Games" iconImageName:@"Assets/AMGIconGamesKeeper60"];
 }
 
-+ (instancetype)appWizBox
-{
-    return [self appWithIdentifier:@325184067
-                              name:@"WizBox"
-                         nameShort:nil
-                     iconImageName:@"Assets/AMGIconWizBox60"];
++ (instancetype)appWizBox {
+    return [self appWithIdentifier:@325184067 name:@"WizBox" nameShort:nil iconImageName:@"Assets/AMGIconWizBox60"];
 }
 
-+ (instancetype)appMemorii
-{
-    return [self appWithIdentifier:@352411168
-                              name:@"Memorii"
-                         nameShort:nil
-                     iconImageName:@"Assets/AMGIconMemorii60"];
++ (instancetype)appMemorii {
+    return [self appWithIdentifier:@352411168 name:@"Memorii" nameShort:nil iconImageName:@"Assets/AMGIconMemorii60"];
 }
 
-+ (instancetype)appComicBookDay
-{
-    return [self appWithIdentifier:@788312005
-                              name:@"Comic Book Day"
-                         nameShort:@"Comic Book"
-                     iconImageName:@"Assets/AMGIconComicBookDay60"];
++ (instancetype)appComicBookDay {
+    return [self appWithIdentifier:@788312005 name:@"Comic Book Day" nameShort:@"Comic Book" iconImageName:@"Assets/AMGIconComicBookDay60"];
 }
 
-- (NSString *)nameShort
-{
++ (instancetype)appMegaMoji {
+    return [self appWithIdentifier:@1152321201 name:@"Mega Moji" nameShort:@"Mega Moji" iconImageName:@"Assets/AMGIconMegaMoji60"];
+}
+
++ (instancetype)appD0TSEchoplex {
+    return [self appWithIdentifier:@308598596 name:@"D0TS:Echoplex" nameShort:@"Echoplex" iconImageName:@"Assets/AMGIconEchoplex60"];
+}
+
+- (NSString *)nameShort {
     if (!_nameShort) {
         return _name;
     }
