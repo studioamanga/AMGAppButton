@@ -1,7 +1,7 @@
 //
 // AMGAppButton.m
 //
-// Copyright (c) 2014 Vincent Tourraine (http://www.vtourraine.net)
+// Copyright (c) 2014-2019 Vincent Tourraine (http://www.vtourraine.net)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -26,11 +26,8 @@
 
 @implementation AMGAppButton
 
-+ (instancetype)buttonWithApp:(AMGApp *)app
-{
-    return [AMGAppButton appButtonWithAppIdentifier:app.identifier.stringValue
-                                              title:app.nameShort
-                                              image:[UIImage imageNamed:app.iconImageName]];
++ (instancetype)buttonWithApp:(AMGApp *)app {
+    return [AMGAppButton appButtonWithAppIdentifier:app.identifier.stringValue title:app.nameShort image:[UIImage imageNamed:app.iconImageName]];
 }
 
 @end

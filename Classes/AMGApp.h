@@ -43,5 +43,6 @@
 + (instancetype)appComicBookDay;
 + (instancetype)appMegaMoji;
 + (instancetype)appD0TSEchoplex;
++ (instancetype)appNanoNotes;
 
 @end

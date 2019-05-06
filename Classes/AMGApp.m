@@ -78,6 +78,10 @@
     return [self appWithIdentifier:@308598596 name:@"D0TS:Echoplex" nameShort:@"Echoplex" iconImageName:@"Assets/AMGIconEchoplex60"];
 }
 
++ (instancetype)appNanoNotes {
+    return [self appWithIdentifier:@1445942906 name:@"Nano Notes" nameShort:@"Nano Notes" iconImageName:@"Assets/AMGIconNanoNotes60"];
+}
+
 - (NSString *)nameShort {
     if (!_nameShort) {
         return _name;
