@@ -1,7 +1,7 @@
 //
-// AMGApp.h
+// AMGAppButton.swift
 //
-// Copyright (c) 2014-2019 Vincent Tourraine (http://www.vtourraine.net)
+// Copyright (c) 2014-2022 Vincent Tourraine (https://www.vtourraine.net)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,28 +21,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+import VTAppButton
+import UIKit
 
-@interface AMGApp : NSObject
-
-@property (nonatomic, readonly, copy) NSString *iconImageName;
-@property (nonatomic, readonly, copy) NSNumber *identifier;
-@property (nonatomic, readonly, copy) NSString *name;
-@property (nonatomic, readonly, copy) NSString *nameShort;
-
-+ (instancetype)appWithIdentifier:(NSNumber *)identifier
-                             name:(NSString *)name
-                        nameShort:(NSString *)nameShort
-                    iconImageName:(NSString *)iconImageName;
-
-+ (instancetype)app1List;
-+ (instancetype)appContacts;
-+ (instancetype)appGamesKeeper;
-+ (instancetype)appWizBox;
-+ (instancetype)appMemorii;
-+ (instancetype)appComicBookDay;
-+ (instancetype)appMegaMoji;
-+ (instancetype)appD0TSEchoplex;
-+ (instancetype)appNanoNotes;
-
-@end
+public class AMGAppButton: VTAppButton {
+    
+    public convenience init(with app: AMGApp) {
+        let title = app.nameShort ?? app.name
+        let image = UIImage(named: app.iconImageName, in: Bundle.module, compatibleWith: nil)!
+        self.init(appIdentifier: app.identifier, title: title, image: image)
+    }
+}
