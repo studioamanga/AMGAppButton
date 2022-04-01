@@ -6,7 +6,7 @@ let package = Package(
     name: "AMGAppButton",
     defaultLocalization: "en",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v13)
     ],
     products: [
         .library(name: "AMGAppButton", targets: ["AMGAppButton"])

@@ -24,10 +24,10 @@
 import Foundation
 
 public struct AMGApp {
-    let iconImageName: String
-    let identifier: Int
-    let name: String
-    let nameShort: String?
+    public let iconImageName: String
+    public let identifier: Int
+    public let name: String
+    public let nameShort: String?
 }
 
 extension AMGApp {

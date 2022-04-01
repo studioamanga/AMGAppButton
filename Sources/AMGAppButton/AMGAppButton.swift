@@ -25,10 +25,10 @@ import VTAppButton
 import UIKit
 
 public class AMGAppButton: VTAppButton {
-    
+
     public convenience init(with app: AMGApp) {
         let title = app.nameShort ?? app.name
         let image = UIImage(named: app.iconImageName, in: Bundle.module, compatibleWith: nil)!
-        self.init(appIdentifier: app.identifier, title: title, image: image)
+        self.init(for: app.identifier, title: title, image: image)
     }
 }
