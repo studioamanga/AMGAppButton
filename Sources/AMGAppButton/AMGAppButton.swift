@@ -26,6 +26,28 @@ import UIKit
 
 public class AMGAppButton: VTAppButton {
 
+    public var isLoading: Bool = false {
+        didSet {
+            if isLoading {
+                self.isEnabled = false
+
+                let indicator = UIActivityIndicatorView(style: .medium)
+                indicator.frame = bounds
+                indicator.startAnimating()
+                addSubview(indicator)
+                self.activityIndicator = indicator
+            }
+            else {
+                self.isEnabled = true
+
+                self.activityIndicator?.removeFromSuperview()
+                self.activityIndicator = nil
+            }
+        }
+    }
+
+    private var activityIndicator: UIActivityIndicatorView?
+
     public convenience init(with app: AMGApp) {
         let title = app.nameShort ?? app.name
         let image = UIImage(named: app.iconImageName, in: Bundle.module, compatibleWith: nil)!
