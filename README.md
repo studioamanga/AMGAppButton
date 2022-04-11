@@ -5,12 +5,12 @@ _`UIButton` looking like an app icon._
 
 ## Requirements
 
-AMGAppButton requires iOS 5.0 and above, and uses ARC.
+AMGAppButton requires iOS 13.0, and is written in Swift 5.
 
 
 ## Credits
 
-AMGAppButton was created by [Vincent Tourraine](http://www.vtourraine.net).
+AMGAppButton was created by [Vincent Tourraine](https://www.vtourraine.net).
 
 
 ## License

@@ -13,16 +13,13 @@ Pod::Spec.new do |s|
   s.author       = { "Vincent Tourraine" => "me@vtourraine.net" }
   s.social_media_url = "http://twitter.com/StudioAMANgA"
 
-  s.platform     = :ios, '5.0'
+  s.platform     = :ios, '13.0'
 
   s.source       = { :git => "https://github.com/studioamanga/AMGAppButton.git", :tag => "0.1.5" }
-
-  s.source_files  = 'Classes', 'Classes/**/*.{h,m}'
-
-  s.resources = "Assets"
+  s.source_files  = 'Sources', 'Sources/**/*.swift'
+  s.resources = "Sources/AMGAppButton/Resources"
 
   s.requires_arc = true
 
   s.dependency 'VTAppButton'
-
 end

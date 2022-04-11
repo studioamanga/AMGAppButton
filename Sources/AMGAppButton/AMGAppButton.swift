@@ -29,19 +29,19 @@ public class AMGAppButton: VTAppButton {
     public var isLoading: Bool = false {
         didSet {
             if isLoading {
-                self.isEnabled = false
+                isEnabled = false
 
                 let indicator = UIActivityIndicatorView(style: .medium)
                 indicator.frame = bounds
                 indicator.startAnimating()
                 addSubview(indicator)
-                self.activityIndicator = indicator
+                activityIndicator = indicator
             }
             else {
-                self.isEnabled = true
+                isEnabled = true
 
-                self.activityIndicator?.removeFromSuperview()
-                self.activityIndicator = nil
+                activityIndicator?.removeFromSuperview()
+                activityIndicator = nil
             }
         }
     }

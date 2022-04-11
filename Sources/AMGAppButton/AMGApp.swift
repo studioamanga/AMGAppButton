@@ -31,47 +31,55 @@ public struct AMGApp {
 }
 
 extension AMGApp {
-    
+
     public static var oneList: AMGApp {
         get {
             return AMGApp(iconImageName: "AMGIcon1List60", identifier: 579440241, name: "1List", nameShort: nil)
         }
     }
+
     public static var contacts: AMGApp {
         get {
             return AMGApp(iconImageName: "AMGIconContacts60", identifier: 639507613, name: "Contact[s]", nameShort: nil)
         }
     }
+
     public static var gamesKeeper: AMGApp {
         get {
             return AMGApp(iconImageName: "AMGIconGamesKeeper60", identifier: 674138310, name: "Games Keeper", nameShort: "Games")
         }
     }
+
     public static var wizBox: AMGApp {
         get {
             return AMGApp(iconImageName: "AMGIconWizBox60", identifier: 325184067, name: "WizBox", nameShort: nil)
         }
     }
+
     public static var memorii: AMGApp {
         get {
             return AMGApp(iconImageName: "AMGIconMemorii60", identifier: 352411168, name: "Memorii", nameShort: nil)
         }
     }
+
     public static var comicBookDay: AMGApp {
         get {
             return AMGApp(iconImageName: "AMGIconComicBookDay60", identifier: 788312005, name: "Comic Book Day", nameShort: "Comic Book")
         }
     }
+
     public static var megaMoji: AMGApp {
         get {
             return AMGApp(iconImageName: "AMGIconMegaMoji60", identifier: 1152321201, name: "Mega Moji", nameShort: nil)
         }
     }
+
     public static var d0tsEchoplex: AMGApp {
         get {
             return AMGApp(iconImageName: "AMGIconEchoplex60", identifier: 308598596, name: "D0TS:Echoplex", nameShort: "Echoplex")
         }
     }
+
     public static var nanoNotes: AMGApp {
         get {
             return AMGApp(iconImageName: "AMGIconNanoNotes60", identifier: 1445942906, name: "Nano Notes", nameShort: nil)
