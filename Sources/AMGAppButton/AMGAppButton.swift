@@ -21,6 +21,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#if !os(macOS)
+
 import VTAppButton
 import UIKit
 
@@ -54,3 +56,5 @@ public class AMGAppButton: VTAppButton {
         self.init(for: app.identifier, title: title, image: image)
     }
 }
+
+#endif
