@@ -12,7 +12,10 @@ let package = Package(
         .library(name: "AMGAppButton", targets: ["AMGAppButton"])
     ],
     dependencies: [
-        .package(path: "../VTAppButton")
+        .package(
+            url: "https://github.com/vtourraine/VTAppButton.git",
+            from: "1.0.0"
+        )
     ],
     targets: [
         .target(
